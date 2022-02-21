@@ -1,3 +1,9 @@
+/**
+* Java 1. Homework4
+* @author Margarita Morozova
+* @version 21.2.2022
+*/
+
 import java.util.Random;
 import java.util.Scanner;
 
