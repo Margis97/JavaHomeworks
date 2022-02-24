@@ -1,7 +1,7 @@
 /**
 * Java 1. Homework3
 * @author Margarita Morozova
-* @version 17.2.2022
+* @version 23.2.2022
 */
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ class Homework3 {
         diagonal();
         int[] someArray = createArray(5, 5);
         System.out.println("\n" + Arrays.toString(someArray));
-
+        System.out.println("\n" + Arrays.toString(minMax()));
     }
 
     static void changeNumber() {
@@ -76,9 +76,17 @@ class Homework3 {
         return array;
     }
 
-    //static int[] minMax() {
-        //int[] arr = {3, 1, -5, -2, 8, 7};
-        //int min = arr[0], max = arr[0];
-
-    //}
+    static int[] minMax() {
+        int[] arr = {3, 1, -5, -2, 8, 7};
+        int min = arr[0], max = arr[0];
+        for (int num : arr) {
+            if (num < min) {
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
+        }
+        return new int[] {min, max};
+    }
 }
